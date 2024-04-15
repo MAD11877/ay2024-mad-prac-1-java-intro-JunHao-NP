@@ -25,8 +25,33 @@ public class Question5
      *     2
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
-     
     Scanner in = new Scanner(System.in);
+    System.out.print("Enter number of integers: ");
+    int numIntegers = in.nextInt();
+
+    int[] integers = new int[numIntegers];
+
+    for (int i = 0; i < numIntegers; i++) {
+        System.out.print("Enter an integer: ");
+        integers[i] = in.nextInt();
+    }
     
+    int Highestcounter = 0;
+    int mode = 0;
+
+    for (int i = 0; i < numIntegers; i++) {
+        int count = 0;
+        for (int j = 0; j < numIntegers; j++) {
+            if (integers[j] == integers[i]) {
+                count++;
+            }
+        }
+        if (count > Highestcounter) {
+            Highestcounter = count;
+            mode = integers[i];
+        }
+    }
+    
+    System.out.print("The mode integer is: " + mode);
   }
 }
