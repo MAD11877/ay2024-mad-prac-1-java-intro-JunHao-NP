@@ -50,6 +50,6 @@ public class Question5
         }
     }
 
-    System.out.print("The mode integer is: " + mode);
+    System.out.print(mode);
   }
 }
