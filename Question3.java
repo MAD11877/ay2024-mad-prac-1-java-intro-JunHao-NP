@@ -11,10 +11,9 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter a integer: ");
     int num = in.nextInt();
     int finalNum = num * num;
-    System.out.println("Your Number is: " + finalNum);
+    System.out.println(finalNum);
 
     
   }
