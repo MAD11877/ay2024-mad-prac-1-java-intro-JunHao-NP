@@ -16,6 +16,6 @@ public class Main
     double weight = in.nextDouble();
 
     double BMI = weight / Math.pow(height, 2);
-    System.out.printf("%.1f\n", BMI);
+    System.out.printf("%.1f", BMI);
   }
 }
