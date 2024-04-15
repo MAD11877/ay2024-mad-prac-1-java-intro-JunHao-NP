@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question2
+public class Main
 {
   public static void main(String[] args)
   {
@@ -9,17 +9,13 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-     
+
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter your height in meters: ");
     double height = in.nextDouble();
-    
-    Scanner Weightin = new Scanner(System.in);
-    System.out.println("Enter your weight in KG: ");
+
     double weight = in.nextDouble();
 
     double BMI = weight / Math.pow(height, 2);
-
-    System.out.println(BMI);
+    System.out.printf("%.1f\n", BMI);
   }
 }
